@@ -7,22 +7,41 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>newsWeb</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Simple line icons-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-    <!-- Google fonts-->
+   <!--変更点-->
+
+
+
+    <!-- Google fonts　フォント-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="https://ryo-ko-ku.github.io/card006/StyleSheet1.css" rel="stylesheet" />
+
+
+    <!-- 変更点　CSS相対パスなのと数字に変更することに注意-->
+    <!--font-awesome&css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- Core theme CSS (includes Bootstrap)CSS適用-->
+    <link href="StyleSheet2.css" rel="stylesheet" />
+
+
 </head>
+
+
+   
 <body>
     <div class="container text-center">
+
         <div class="row">
+
+
+            <!-- 変更点-->
+            <h3>画像をダブルクリックしていいね！<i class="fas fa-heart"></i>してね</h3>
+            <small>You liked it <span id="times">0</span>times</small>
+
             <div class="col-sm12">
-                <img src="image007.png" alt="Alternate Text" id="image" />
+
+                <!--変更点　class-->
+                <div class="img-container">
+                    <div class="loveMe" id="image"></div>
+                </div>
                 <h2>最高に整う5つの法則</h2>
                 <p>
                     長かった梅雨も明け、猛烈な暑さが連日続く今日この頃、皆さんはサウナに行かれているだろうか？<br />
@@ -61,17 +80,17 @@
                     <br />
                     健闘を祈る---2022/7/26（國井）
 
-
                 </p>
             </div>
-            
-                <div class="col-sm-4 text-right">
-                    <button type="button" onclick="location.href='https://ryo-ko-ku.github.io/newsWeb.ver1.00'">記事に戻る</button>
-                </div>
-            
+
+            <div class="col-sm-4 text-right">
+                <button type="button" onclick="location.href='https://ryo-ko-ku.github.io/newsWeb.ver1.00'">記事に戻る</button>
+            </div>
+
         </div>
     </div>
     
-   
+    <!-- 変更点　相対パスと数字に注意-->
+    <script src="Script2.js"></script>
 </body>
 </html>
